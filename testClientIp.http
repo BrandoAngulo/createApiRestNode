@@ -1,0 +1,12 @@
+### GET = obtener lo que esta en la ip 
+http://localhost:3000/api/languages
+
+### Enviar peticiones POST
+POST http://localhost:3000/api/languages
+Content-Type: application/json
+
+  {
+    "name": "nodejs",
+    "programmers": 24
+  }
+
