@@ -8,7 +8,11 @@ const router = Router();
 router.get("/", languageController.getLanguages);
 //ruta para obtener la peticion recibiendo parametros por url
 router.get("/:id", languageController.getLanguage);//la funcion seria getLanguage
-//ruta para enviar peticiones con post
+//ruta para insertar peticiones con post
 router.post("/", languageController.addLanguage);
+//ruta para DELETE
+router.delete("/:id", languageController.deleteLanguage);
+//ruta para UPDATE
+router.put("/:id", languageController.updateLanguage);
 
 export default router; 
