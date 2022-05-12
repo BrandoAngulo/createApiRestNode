@@ -1,28 +1,26 @@
 ### GET = obtener lo que esta en la ip
-###LISTAR 
+###LISTAR TODO O / numero a seleccionar para ver por un solo dato
 http://localhost:3000/api/languages
 
-###LISTAR 1 DATO v
-http://localhost:3000/api/languages/1
+### UPDATE
+PUT  http://localhost:3000/api/languages/4
+Content-Type: application/json
 
-### Enviar peticiones POST
+{
+  "name": "java E",
+  "programmers": "25"
+}
+
+### insertar peticiones POST
 POST http://localhost:3000/api/languages
 Content-Type: application/json
 
   {
-    "name": "phyton",
-    "programmers": 
+    "name": "C#",
+    "programmers": 50 
   }
 
 ### DELETE
 DELETE http://localhost:3000/api/languages/5
 
-//UPDATE
-PUT http://localhost:3000/api/languages/4 
-Content-Type: application/json
 
-  {
-    "name": "java",
-    "programmers": 25
-  
-  }
